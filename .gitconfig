@@ -1,0 +1,30 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[user]
+	name = Cindy Sridharan
+	email = cindysridharan@gmail.com
+[color "status"]
+    added = 45
+    untracked = 118
+	changed = 220
+[log]
+    date = short
+[diff]
+	algorithm = patience
+[color "diff"]
+	meta = 27
+	frag = 203
+	old = 82
+	new = 202
+[push]
+  default = upstream
+	rebase = true
+[pull]
+	rebase = true
+[core]
+    excludesfile = ~/.gitignore
+    quotepath = false
+    autocrlf = input
+	precomposeunicode = true

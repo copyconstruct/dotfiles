@@ -1,0 +1,17 @@
+alias mongo="mongo --host $(docker-machine ip default)"
+alias blacktip_container="docker ps -a | grep blacktip"
+alias nsq="docker ps -a | grep nsq"
+
+alias psaux="ps aux"
+alias zshrc="sublime ~/.zshrc"
+alias ohmyzsh="sublime ~/.oh-my-zsh"
+alias path="echo $PATH"
+alias home="echo $HOME"
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+alias master="git checkout master; git pull origin master"
+alias ch="git checkout"
+alias rebase="git rebase -i"
+alias add="git add"
+alias status="git status -sb"
+alias wip="git add -u && git commit -m ..."
