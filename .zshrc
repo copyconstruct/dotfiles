@@ -1,13 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/cindysridharan/.oh-my-zsh
 export PS1="%n"
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local 
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="cindy"
-
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,7 +56,17 @@ plugins=(git)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
+man() {
+	env \
+		LESS_TERMCAP_md=$'\e[1;36m' \
+		LESS_TERMCAP_me=$'\e[0m' \
+		LESS_TERMCAP_se=$'\e[0m' \
+		LESS_TERMCAP_so=$'\e[1;40;92m' \
+		LESS_TERMCAP_ue=$'\e[0m' \
+		LESS_TERMCAP_us=$'\e[1;32m' \
+			man "$@"
+}
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/dotfiles/.aliases

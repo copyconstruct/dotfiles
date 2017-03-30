@@ -12,5 +12,5 @@ git_custom_status() {
   fi
 }
 
-PROMPT='%F{167}[%n@%m]%F{24}[%.]$(git_custom_status)%{$reset_color%}%B$%b '
+
 

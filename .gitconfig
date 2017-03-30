@@ -4,7 +4,7 @@
 	smudge = git-lfs smudge %f
 [user]
 	name = Cindy Sridharan
-	email = cindysridharan@gmail.com
+	email = cindy@imgix.com
 [color "status"]
     added = 45
     untracked = 118
