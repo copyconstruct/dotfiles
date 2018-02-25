@@ -1,9 +1,7 @@
-alias mongoexport="/usr/local/bin/mongodb/bin/mongoexport"
-alias sjc1="ssh-add; ssh sjc1"
-alias mongo="/usr/local/bin/mongodb/bin/mongo"
 alias venv="export PYTHONPATH=.; source venv/bin/activate"
 
-alias vi="/usr/local/bin/vim" 
+alias vi="$which vim"
+alias ls="la -lah"
 alias psaux="ps aux"
 alias zshrc="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
