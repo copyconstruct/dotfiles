@@ -9,6 +9,7 @@ alias path="echo $PATH"
 alias home="echo $HOME"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 alias openssl="/usr/local/opt/openssl/bin/openssl"
+alias personal='git commit --author="Cindy Sridharan <cindysridharan+github@gmail.com>" -m'
 
 alias master="git checkout master; git pull origin master"
 alias ck="git checkout"
