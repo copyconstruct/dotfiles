@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-# export PS1="%n"
 export PATH=/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/local 
 
 # Set name of the theme to load.
