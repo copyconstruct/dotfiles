@@ -70,6 +70,7 @@ man() {
 
 source $HOME/dotfiles/oh-my-zsh.sh
 source $HOME/dotfiles/.aliases
+eval `ssh-agent -s`
 ssh-add -K ~/.ssh/id_rsa
 
 # You may need to manually set your language environment
