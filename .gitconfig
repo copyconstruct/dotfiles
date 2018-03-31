@@ -23,6 +23,8 @@
 	rebase = true
 [pull]
 	rebase = true
+[rebase]
+	autoSquash = true
 [core]
     excludesfile = ~/.gitignore
     quotepath = false

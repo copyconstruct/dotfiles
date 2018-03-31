@@ -52,7 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, git-extras, z, tmux, github)
+plugins=(git, git-extras, z, tmux, github, zsh-autosuggestions)
 
 # User configuration
 
@@ -70,9 +70,10 @@ man() {
 
 source $HOME/dotfiles/oh-my-zsh.sh
 source $HOME/dotfiles/.aliases
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval `ssh-agent -s`
 ssh-add -K ~/.ssh/id_rsa
-
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -80,9 +81,8 @@ ssh-add -K ~/.ssh/id_rsa
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='vim'
 # fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
