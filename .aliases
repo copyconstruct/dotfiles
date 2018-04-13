@@ -24,3 +24,5 @@ alias sp="$HOME/code/swift-package-manager/.build/x86_64-apple-macosx10.10/debug
 alias spx="$HOME/code/swift-package-manager/.build/x86_64-apple-macosx10.10/debug/swift-package generate-xcodeproj"
 alias sr="$HOME/code/swift-package-manager/.build/x86_64-apple-macosx10.10/debug/swift-run --enable-build-manifest-caching"
 alias st="$HOME/code/swift-package-manager/.build/x86_64-apple-macosx10.10/debug/swift-test --enable-build-manifest-caching"
+alias xcode="swift package generate-xcodeproj"
+alias update="swift package update"
